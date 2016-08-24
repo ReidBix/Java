@@ -1,0 +1,92 @@
+/**
+ * 
+ * @author Joe Urbanek jcu5df, Reid Bixler rmb3yz
+ * 
+ */
+
+Testing AddPlaylist
+
+First Test: Checks if an empty playlist is equal to itself
+Second Test: Checks if a playlist with an empty playlist inside is equal to another
+
+First Test: Checks if the first Playable (p1 in this instance) is the first Playable in p2
+Second Test: Checks for the instance of going past the total number of Playables in the PlayList
+
+First Test: Checks for nested Playlists
+Second Test: Checks for Playables within nested Playlists
+
+First Test: Checks for attempting to put duplicates of Playables in a PlayList
+Second Test: Checks for attempting to put duplicates of PlayLists in a PlayList
+
+The first few tests were to see if a few simple comparisons would work to make sure that there 
+were no simple mistakes being overlooked. The next sets of tests implemented adding Playables into
+some Playlists and adding those Playlists into others to make sure that Playlists could properly
+hold both other Playlists as well as other Playables. The next tests were to check multiple nested
+Playlists to make sure that there would be no errors from having too many or not being able to
+handle the amount. The final tests run on this method were used to check putting duplicates of Playables
+as well as duplicates of Playlists to ensure that duplicates could not be produced. By doing these tests,
+all of the major coding problems that could arise from the TestCases were checked for.
+
+
+
+First Test: Checks for comparisons between Songs and Videos
+Second Test: Checks for comparisons between same song
+Third Test: Checks for comparisons between same video
+
+First Test: Checks for adding duplicate and checking size
+Second Test: Checks for adding multiple types of Playable and checking size
+Third Test: Checks the size of an empty playlist
+
+First Test: Checks for adding playlists as type Playable
+Second Test: Checks for adding all possible types of Playable in one PlayList
+Third Test: Also checking for adding all possible types of Playable
+
+First Test: Checks for nesting all types of Playables
+Second Test: Checks for nesting all types of Playables
+Third Test: Checks for nesting all types of Playables
+
+The first few tests were to see if a few simple comparisons would work with songs and videos
+put into a playlist to make sure that there were no simple mistakes being overlooked.
+Multiple checks for both song and videos to make sure that both Playables could be compared and returned
+the correct values. The next set of tests checks for adding duplicates as well as to see if the size of
+the Playlists worked properly dependent on the number of Playables, including having multiple types of
+Playables. Also checked to make sure an empty playlist had a size of 0. The next tests were adding Playlists
+as type Playable rather than type Playlist as well as having all types of Playables in a Playlist. Finally
+checked for nesting a lot of Playables inside Playlists. By doing these tests,
+all of the major coding problems that could arise from the TestCases were checked for.
+
+
+
+First Test: Checks for a file that contains a single song with no errors and checks Title 
+Second Test: Checks for Artist from previous file
+Third Test: Checks for TotalPlaytime
+
+First Test: Checks for a file that contains two songs with no errors and checks Title 
+Second Test: Checks for Artist from previous file
+Third Test: Checks for TotalPlaytime
+
+First Test: Checks for a file that contains one song and two videos with no errors and checks User
+Second Test: Checks for Title from previous file
+Third Test: Checks for TotalPlaytime
+Fourth Test: Checks for the youtube Link
+
+First Test: Checks for a file that contains one song and one video with no errors and checks User
+Second Test: Checks for Title from previous file
+Third Test: Checks for TotalPlaytime
+Fourth Test: Checks for the youtube Link
+
+First Test: Checks for a file that contains one song with errors and checks Artist 
+Second Test: Checks for Title from previous file
+Third Test: Checks for TotalPlaytime
+
+First Test: Checks for a file that contains one song and one video with no errors and checks User
+Second Test: Checks for Title from previous file
+Third Test: Checks for TotalPlaytime
+Fourth Test: Checks for the youtube Link
+
+The first test checks for a file with a single song to make sure that the songs work in loadMedia.
+The second test checks for multiple songs to make sure that loadMedia can take multiple Playables.
+The third test checks for videos to make sure that loadMedia can do all types of Playables.
+The fourth test checks for videos again.
+The fifth test checks for a file that contains a song but has errors with spacing.
+The final test checks for a file that contains both types of Playables and all possible errors.
